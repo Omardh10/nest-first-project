@@ -12,7 +12,6 @@ import { UpdateOrder } from "./dtos/updateorder.dto";
 @Controller("/api/orders")
 export class OrderController {
 
-
     constructor(private readonly orderservice: OrderService) { }
     @Get("")
     @UseGuards(AuthRoleGuard)
